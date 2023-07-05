@@ -1,0 +1,125 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(48, 208, 48) 0%,rgb(48, 208, 48) 50%,white 50%);
+    font-family: 'Belanosima', sans-serif;
+}
+
+.container
+{
+    width: auto;
+    min-width: 300px;
+    height: auto;
+    background:linear-gradient(white 0%,white 50%,rgb(48, 208, 48) 50%,rgb(48, 208, 48) 100%);
+    margin-top: -8px;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 12px black,-3px -3px 12px black;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    margin-right:5% ;
+    padding: 10px;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 3px 3px 12px black,-3px -3px 12px black;
+    transition: 1s;
+    transform: scale(1);
+    /* background:linear-gradient(white 0%,white 50%,rgb(48, 208, 48) 50%,rgb(48, 208, 48) 100%);    */
+}
+
+.content
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+  position: relative;
+  
+}
+
+.content::before
+{
+   
+    position: absolute;
+    left: 0%;
+    bottom: 110%;
+   font-family: 'Poppins', sans-serif;
+   margin-top: 10px;
+    
+}
+
+#kg1::before
+{
+    content:'Kilograms:' ;
+}
+#gr1::before
+{
+    content: 'Grams:';
+}
+
+#po1::before
+{
+    content: 'Pounds:';
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+
+    font-size: 1.3rem;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1.5px;
+    border-color: black;
+    color: black;
+    padding: 2%;
+}
+
+::placeholder
+{
+    color: black;
+}
+
+.footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+
+}

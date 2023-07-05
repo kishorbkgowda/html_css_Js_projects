@@ -1,0 +1,103 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(white 0%,white 50%,red 50%,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-family: monospace;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px red,-2.5px -2.5px red ;
+    padding: 5px;
+}
+.container
+{
+    height: auto;
+    width: 40%;
+    min-width:450px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem;
+    /* border-radius: 20px; */
+    box-shadow: 2.5px 2.5px  red,-2.5px -2.5px  red;
+}
+.container div
+{
+    margin: 1.5rem;
+}
+
+select,input
+{
+    font-size: 1.45rem;
+    padding: 3px;
+    background-color:white;
+    border: 2.0px solid white;
+    box-shadow: 2.5px 2.5px red,-2.5px -2.5px red;
+    margin: 8px;
+    text-align: center;
+}
+
+input{
+    margin-left: 30px;
+}
+
+input:focus
+{
+
+    transition: 0.8s;
+    box-shadow: 5px 5px white,-5px -5px white;
+    
+}
+
+button
+{
+    font-size: 1.45rem;
+    padding: 10px 0;
+    background-color:white;
+    border: 2.0px solid white;
+    width: 100%;
+    transition: 0.3s;
+    background-color: red;
+    border-radius: 10px;
+    color: white;    
+}
+
+button:hover
+{
+    box-shadow: 2.5px 2.5px red,-2.5px -2.5px red;
+    transform: translateY(-2.5px);
+    background-color: white;
+    color: red;
+}
+
+.container div:nth-child(4)
+{
+    width: 57%;
+    display: flex;
+    justify-content: center;  
+}
+
+p
+{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    width: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+

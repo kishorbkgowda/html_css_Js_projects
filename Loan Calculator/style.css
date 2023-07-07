@@ -1,0 +1,163 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,white 0%,white 50%,rgb(11, 177, 206) 50%);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color:rgb(11, 177, 206);
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    width: 450px;
+    background-color: white;
+    box-shadow: 5px 5px rgb(11, 177, 206),-5px -5px rgb(11, 177, 206);
+    margin: 2.5rem;
+    padding: 1.2rem;
+}
+
+.container div
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+span
+{
+    font-size: 1rem;
+     padding: 4px;  
+    margin:2.5px;
+    margin-bottom: 5px;
+    width:37%;
+    border: solid 1px rgb(11, 177, 206); 
+    color:rgb(11, 177, 206);
+    font-weight: bold;
+    /* margin-left: 0; */
+    /* box-shadow: 0.5px 0.5px rgb(11, 177, 206),-0.5px -0.5px rgb(11, 177, 206); */
+    
+}
+input
+{
+ background-color: white;
+ border: solid 1px rgb(11, 177, 206);   
+ font-size: 1.7rem;
+ margin: 2.5px;
+ padding: 5px;
+ font-family: monospace;
+ color:rgb(11, 177, 206);
+}
+
+p
+{
+  font-size: 1rem;
+  margin: 2.5px;
+  padding: 2.5px;
+  color:rgb(11, 177, 206);
+  width: fit-content;
+  /* border: solid 1px rgb(11, 177, 206); */
+
+}
+.result
+{
+    border-style: none;
+    color:rgb(11, 177, 206);
+    padding: 2.5px;
+    font-size: 1rem;
+}
+button
+{
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: white;
+    color: rgb(11, 177, 206);
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    /* border: solid 1px rgb(11, 177, 206); */
+    margin: 2.5px;
+    font-family: monospace;
+}
+
+button:hover
+{
+    background-color: rgb(11, 177, 206);
+    color: white;
+    /* border-style: none; */
+    animation: swipe 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes swipe 
+{
+    0%
+    {
+        width: 50%;
+        /* height: 20%; */
+        animation-timing-function: linear;
+    }
+
+    20%
+    {
+        width :40%;
+        /* height: 40%; */
+        animation-timing-function: ease-in-out;
+    }
+
+    40%
+    {
+        
+        color: white;
+        /* height:60%; */
+        animation-timing-function: ease-in-out;
+        border-radius: 25px;
+       
+
+    }
+
+    60%
+    { 
+        width:30%;
+        /* height:80%; */
+        animation-timing-function: ease-in-out;
+        border-radius: 25px;
+       
+    }
+
+    80%
+    {
+        width:40%;
+        /* height:100%; */
+        animation-timing-function:ease-in-out;
+    }
+    100%
+    {
+        width:50%;
+        /* height:100%; */
+        animation-timing-function: ease-in-out;
+    }
+
+
+    
+}
